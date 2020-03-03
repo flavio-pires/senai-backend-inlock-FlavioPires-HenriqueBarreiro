@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "4402d49fc7b97c43b651b51d1100a47c89412058"
+    "signature": "098570f2f25adf7ec54ffd2bfa62d96a850b7721"
   },
   "compilationOptions": {
     "defines": [
@@ -17,7 +17,7 @@
     "optimize": false,
     "keyFile": "",
     "emitEntryPoint": true,
-    "xmlDoc": false,
+    "xmlDoc": true,
     "debugType": "portable"
   },
   "targets": {
@@ -31,7 +31,9 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
           "Swashbuckle.AspNetCore": "5.0.0",
           "System.Data.SqlClient": "4.8.1",
-          "System.IdentityModel.Tokens.Jwt": "5.6.0"
+          "System.IdentityModel.Tokens.Jwt": "5.6.0",
+          "System.Xml.XPath": "4.3.0",
+          "XmlPatcher": "1.0.6"
         },
         "runtime": {
           "Senai.InLock.WebApi.dll": {}
@@ -866,6 +868,17 @@
         },
         "compile": {
           "lib/netstandard2.0/System.Text.Json.dll": {}
+        }
+      },
+      "XmlPatcher/1.0.6": {
+        "runtime": {
+          "lib/netstandard2.0/XmlPatcher.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/XmlPatcher.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3950,6 +3963,13 @@
       "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
       "path": "system.text.json/4.6.0",
       "hashPath": "system.text.json.4.6.0.nupkg.sha512"
+    },
+    "XmlPatcher/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wNLRki835lHev86XiPMuDw6pGcJqjswbXQPiWDBIBC1tCEovtI5ph9oteMOjzLCT/N2Bt4F0Hxb9276NNvh8Qw==",
+      "path": "xmlpatcher/1.0.6",
+      "hashPath": "xmlpatcher.1.0.6.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
