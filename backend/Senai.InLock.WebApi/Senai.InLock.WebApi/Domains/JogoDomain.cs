@@ -17,11 +17,13 @@ namespace Senai.InLock.WebApi.Domains
         [Required(ErrorMessage = "Informe o Nome do jogo")]
         public string NomeJogo { get; set; }
         
-        public string Descrição { get; set; }
+        public string Descricao { get; set; }
 
         // Define que a data é obrigatório
         [Required(ErrorMessage = "Informe o Data de lançamento do jogo")]
-        public DateTime DataLançamento { get; set; }
+        // Define o tipo de dado
+        [DataType(DataType.Date)]
+        public DateTime DataLancamento { get; set; }
 
         // Define que o Valor do jogo é obrigatório
         [Required(ErrorMessage = "Informe quanto vai custar o jogo")]

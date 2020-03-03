@@ -12380,23 +12380,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47651807863\\.nuget\\packages\\": {},
+    "C:\\Users\\39221000826\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47651807863\\Desktop\\senai\\senai-backend-inlock-FlavioPires-HenriqueBarreiro\\backend\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\Senai.InLock.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\39221000826\\Documents\\senai-backend-inlock-FlavioPires-HenriqueBarreiro\\backend\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\Senai.InLock.WebApi.csproj",
       "projectName": "Senai.InLock.WebApi",
-      "projectPath": "C:\\Users\\47651807863\\Desktop\\senai\\senai-backend-inlock-FlavioPires-HenriqueBarreiro\\backend\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\Senai.InLock.WebApi.csproj",
-      "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47651807863\\Desktop\\senai\\senai-backend-inlock-FlavioPires-HenriqueBarreiro\\backend\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\39221000826\\Documents\\senai-backend-inlock-FlavioPires-HenriqueBarreiro\\backend\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\Senai.InLock.WebApi.csproj",
+      "packagesPath": "C:\\Users\\39221000826\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\39221000826\\Documents\\senai-backend-inlock-FlavioPires-HenriqueBarreiro\\backend\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\47651807863\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\39221000826\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

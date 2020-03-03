@@ -15,7 +15,7 @@ SELECT * FROM Jogo;
 SELECT NomeJogo, NomeEstudio FROM Jogo INNER JOIN Estudio ON Jogo.IdEstudio = Estudio.IdEstudio;
 
 -- Buscar e trazer na lista todos os estúdios, mesmo que eles não contenham nenhum jogo de referência
-
+SELECT * FROM Estudio LEFT OUTER JOIN Jogo ON Estudio.IdEstudio = Jogo.IdEstudio;
 
 -- Busca um usuário através do E-mail e da Senha
 SELECT U.IdUsuario, U.Email, U.IdTipoUsuario, TU.Titulo FROM Usuario U

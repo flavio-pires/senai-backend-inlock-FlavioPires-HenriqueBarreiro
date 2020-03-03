@@ -8,7 +8,7 @@ namespace Senai.InLock.WebApi.Domains
 {
 
     /// <summary>
-    /// Classe que representa A entidade uSUARIO
+    /// Classe que representa a entidade Usuario
     /// </summary>
     public class UsuarioDomain
     {
@@ -28,8 +28,6 @@ namespace Senai.InLock.WebApi.Domains
         [StringLength(30, MinimumLength = 5, ErrorMessage = "A senha deve conter no mínimo 5 e no máximo 30 caracteres")]
         public string Senha { get; set; }
 
-        // Define que o e-mail é obrigatório
-        [Required(ErrorMessage = "Informe o Tipo do usuário")]
         public int IdTipoUsuario { get; set; }
 
         public TipoUsuarioDomain TipoUsuario { get; set; }

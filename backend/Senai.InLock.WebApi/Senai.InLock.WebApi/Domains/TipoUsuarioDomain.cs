@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Senai.InLock.WebApi.Domains
 {
     /// <summary>
-    /// Classe que representa a entidade Tipo
+    /// Classe que representa a entidade Tipo de Usuario
     /// </summary>
     public class TipoUsuarioDomain
     {
