@@ -2,14 +2,42 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Senai.InLock.WebApi.Interfaces;
+using Senai.InLock.WebApi.Repositories;
 
 namespace Senai.InLock.WebApi.Controllers
 {
+    /// <summary>
+    /// Controller responsável pelos endpoints referentes aos estudios
+    /// </summary>
+
+    // Define que o tipo de resposta da API será no formato JSON
+    [Produces("application/json")]
+
+    // Define que a rota de uma requisição será no formato domínio/api/NomeController
     [Route("api/[controller]")]
+
+    // Define que é um controlador de API
     [ApiController]
+
+    // Define que somente usuários logados possam acessar os endpoints
+    [Authorize]
     public class EstudioController : ControllerBase
     {
+        /// <summary>
+        /// Cria um objeto _estudioRepository que irá receber todos os métodos definidos na interface
+        /// </summary>
+        private IEstudioRepository _estudioRepository { get; set; }
+
+        /// <summary>
+        /// Instancia este objeto para que haja a referência aos métodos no repositório
+        /// </summary>
+        public EstudioController()
+        {
+            _estudioRepository = new EstudioRepository();
+        }
     }
 }
