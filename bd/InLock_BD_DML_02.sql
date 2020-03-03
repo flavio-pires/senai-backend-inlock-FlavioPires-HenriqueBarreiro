@@ -15,8 +15,8 @@ VALUES ('Administrador'),
 GO
 
 INSERT INTO Jogo (NomeJogo, Descricao, DataLancamento, Valor, IdEstudio)
-VALUES ('Diablo 3', 'É um jogo que contém bastante ação e é viciante, seja você um novato ou um fã', '15/05/2012', 'R$ 99,00', 1),
-	   ('Red Dead Redemption II', 'Jogo eletrônico de ação-aventura western', '26/10/2018', 'R$ 120,00', 2);
+VALUES ('Diablo 3', 'É um jogo que contém bastante ação e é viciante, seja você um novato ou um fã', '15/05/2012', 99, 1),
+	   ('Red Dead Redemption II', 'Jogo eletrônico de ação-aventura western', '26/10/2018', 120, 2);
 GO
 
 INSERT INTO Usuario (Email, Senha, IdTipoUsuario)

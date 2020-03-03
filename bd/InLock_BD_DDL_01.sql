@@ -33,7 +33,7 @@ CREATE TABLE Jogo (
 	NomeJogo		VARCHAR (255) NOT NULL,
 	Descricao		VARCHAR (800) NOT NULL,
 	DataLancamento  DATE NOT NULL,
-	Valor			VARCHAR (255) NOT NULL,
+	Valor			MONEY NOT NULL,
 
 	IdEstudio		INT FOREIGN KEY REFERENCES Estudio (IdEstudio)
 );
