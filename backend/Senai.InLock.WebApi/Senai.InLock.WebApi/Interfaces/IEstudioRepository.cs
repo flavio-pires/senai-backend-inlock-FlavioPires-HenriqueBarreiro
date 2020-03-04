@@ -27,14 +27,14 @@ namespace Senai.InLock.WebApi.Interfaces
         /// <summary>
         /// Cadastra um novo estudio
         /// </summary>
-        /// <param name="novoJogo">Objeto novoEstudio que será cadastrado</param>
-        void Cadastrar(EstudioDomain novoJogo);
+        /// <param name="novoEstudio">Objeto novoEstudio que será cadastrado</param>
+        void Cadastrar(EstudioDomain novoEstudio);
 
         /// <summary>
         /// Atualiza um estudio existente
         /// </summary>
         /// <param name="id">ID do estudio que será atualizado</param>
-        /// <param name="jogoAtualizado">Objeto estudioAtualizado que será atualizado</param>
+        /// <param name="estudioAtualizado">Objeto estudioAtualizado que será atualizado</param>
         void Atualizar(int id, EstudioDomain estudioAtualizado);
 
         /// <summary>

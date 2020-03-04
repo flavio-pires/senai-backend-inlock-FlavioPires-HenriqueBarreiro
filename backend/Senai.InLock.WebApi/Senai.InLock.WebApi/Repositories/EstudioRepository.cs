@@ -16,8 +16,8 @@ namespace Senai.InLock.WebApi.Repositories
         /// <summary>
         /// String de conexão com o banco de dados que recebe os parâmetros
         /// </summary>
-        //private string stringConexao = "Data Source=login do banco de dados; initial catalog=InLock_Games_Manha; integrated security=true";
-        private string stringConexao = "Data Source=N-1S-DEV-12\\SQLEXPRESS; initial catalog=InLock_Games_Manha; user Id=sa; pwd=sa@132";
+        private string stringConexao = "Data Source=DESKTOP-RO829R6\\SQLEXPRESS; initial catalog=InLock_Games_Manha; integrated security=true";
+        //private string stringConexao = "Data Source=N-1S-DEV-12\\SQLEXPRESS; initial catalog=InLock_Games_Manha; user Id=sa; pwd=sa@132";
 
         /// <summary>
         /// Busca um estudio através do ID
@@ -30,7 +30,7 @@ namespace Senai.InLock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 // Declara a query que será executada
-                string querySelectById = "SELECT NomeEstudio FROM Estudio WHERE IdEstudio = @ID ";
+                string querySelectById = "SELECT IdEstudio, NomeEstudio FROM Estudio WHERE IdEstudio = @ID ";
 
                 // Abre a conexão com o banco de dados
                 con.Open();
@@ -138,7 +138,7 @@ namespace Senai.InLock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 // Declara a instrução a ser executada
-                string querySelectAll = "SELECT NomeEstudio FROM Estudio";
+                string querySelectAll = "SELECT IdEstudio, NomeEstudio FROM Estudio";
 
                 // Abre a conexão com o banco de dados
                 con.Open();

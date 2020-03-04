@@ -16,8 +16,8 @@ namespace Senai.InLock.WebApi.Repositories
         /// <summary>
         /// String de conexão com o banco de dados que recebe os parâmetros
         /// </summary>
-        //private string stringConexao = "Data Source=login do banco de dados; initial catalog=InLock_Games_Manha; integrated security=true";
-        private string stringConexao = "Data Source=N-1S-DEV-12\\SQLEXPRESS; initial catalog=InLock_Games_Manha; user Id=sa; pwd=sa@132";
+        private string stringConexao = "Data Source=DESKTOP-RO829R6\\SQLEXPRESS; initial catalog=InLock_Games_Manha; integrated security=true";
+        //private string stringConexao = "Data Source=N-1S-DEV-12\\SQLEXPRESS; initial catalog=InLock_Games_Manha; user Id=sa; pwd=sa@132";
 
         /// <summary>
         /// Busca um jogo através do ID
@@ -30,7 +30,7 @@ namespace Senai.InLock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 // Declara a query que será executada
-                string querySelectById = "SELECT E.NomeEstudio, J.NomeJogo, J.Descricao, J.DataLancamento, J.Valor FROM Jogo J INNER JOIN Estudio E ON J.IdEstudio = E.IdEstudio WHERE IdJogo = @ID";
+                string querySelectById = "SELECT J.IdJogo, E.IdEstudio, E.NomeEstudio, J.NomeJogo, J.Descricao, J.DataLancamento, J.Valor FROM Jogo J INNER JOIN Estudio E ON J.IdEstudio = E.IdEstudio WHERE IdJogo = @ID";
 
                 // Abre a conexão com o banco de dados
                 con.Open();
@@ -56,11 +56,15 @@ namespace Senai.InLock.WebApi.Repositories
                             // Atribui às propriedades os valores das colunas da tabela do banco
                             IdJogo = Convert.ToInt32(rdr["IdJogo"])
                             ,
+                            NomeJogo = rdr["NomeJogo"].ToString()
+                            ,
                             Descricao = rdr["Descricao"].ToString()
                             ,
                             DataLancamento = Convert.ToDateTime(rdr["DataLancamento"])
                             ,
                             Valor = Convert.ToDouble(rdr["Valor"])
+                            ,
+                            IdEstudio = Convert.ToInt32(rdr["IdEstudio"])
                             ,
                             Estudio = new EstudioDomain
                             {
@@ -152,7 +156,7 @@ namespace Senai.InLock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 // Declara a instrução a ser executada
-                string querySelectAll = "SELECT E.NomeEstudio, J.NomeJogo, J.Descricao, J.DataLancamento, J.Valor FROM Jogo J INNER JOIN Estudio E ON J.IdEstudio = E.IdEstudio";
+                string querySelectAll = "SELECT J.IdJogo, E.IdEstudio, E.NomeEstudio, J.NomeJogo, J.Descricao, J.DataLancamento, J.Valor FROM Jogo J INNER JOIN Estudio E ON J.IdEstudio = E.IdEstudio";
 
                 // Abre a conexão com o banco de dados
                 con.Open();
@@ -174,11 +178,15 @@ namespace Senai.InLock.WebApi.Repositories
                             // Atribui às propriedades os valores das colunas da tabela do banco
                             IdJogo = Convert.ToInt32(rdr["IdJogo"])
                             ,
+                            NomeJogo = rdr["NomeJogo"].ToString()
+                            ,
                             Descricao = rdr["Descricao"].ToString()
                             ,
                             DataLancamento = Convert.ToDateTime(rdr["DataLancamento"])
                             ,
                             Valor = Convert.ToDouble(rdr["Valor"])
+                            ,
+                            IdEstudio = Convert.ToInt32(rdr["IdEstudio"])
                             ,
                             Estudio = new EstudioDomain
                             {

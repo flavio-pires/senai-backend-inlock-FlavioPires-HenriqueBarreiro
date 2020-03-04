@@ -119,7 +119,7 @@ namespace Senai.InLock.WebApi.Controllers
                     _usuarioRepository.Atualizar(id, usuarioAtualizado);
 
                     // Retorna um status code 204 - No Content
-                    return NoContent();
+                    return Ok("Usuário atualizado");
                 }
                 // Caso ocorra algum erro
                 catch (Exception erro)

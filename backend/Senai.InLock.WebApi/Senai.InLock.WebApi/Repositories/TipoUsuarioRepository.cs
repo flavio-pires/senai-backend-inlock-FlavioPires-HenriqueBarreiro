@@ -16,8 +16,8 @@ namespace Senai.InLock.WebApi.Repositories
         /// <summary>
         /// String de conexão com o banco de dados que recebe os parâmetros
         /// </summary>
-        //private string stringConexao = "Data Source=login do banco de dados; initial catalog=InLock_Games_Manha; integrated security=true";
-        private string stringConexao = "Data Source=N-1S-DEV-12\\SQLEXPRESS; initial catalog=InLock_Games_Manha; user Id=sa; pwd=sa@132";
+        private string stringConexao = "Data Source=DESKTOP-RO829R6\\SQLEXPRESS; initial catalog=InLock_Games_Manha; integrated security=true";
+        //private string stringConexao = "Data Source=N-1S-DEV-12\\SQLEXPRESS; initial catalog=InLock_Games_Manha; user Id=sa; pwd=sa@132";
 
         /// <summary>
         /// Atualiza um tipo de usuário existente
